@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - 제13장 폼 확장 및 유효성 검사 - placeholder 특성 대체 기능 구현하기</title>
+    <link rel="stylesheet" href="css/c13.css" />
+  </head>
+  <body>
+  <div class="container">
+    <form method="post" action="/register">
+      <div class="one-third column">
+        <img src="img/logo.png" alt="logo" id="logo" />
+      </div>
+      <div class="two-thirds column" id="main">
+        <fieldset>
+          <legend>사용자 등록</legend>
+          <label for="username">사용자 이름:</label>
+          <input type="text" id="username" name="username" placeholder="username" />
+          <label for="email">메일 주소:</label>
+          <input type="email" id="email" name="email" placeholder="you@yourdomain.com" />
+          <label for="dob">생년월일:</label>
+          <input type="text" id="dob" name="dob" placeholder="yyyy-mm-dd" />
+          <input type="submit" value="등록하기" />
+        </fieldset>
+      </div><!-- .two-thirds -->
+    </form>
+  </div><!-- .container -->
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/utilities.js"></script>
+  <script src="js/placeholder-polyfill.js"></script>
+  </body>
+</html>

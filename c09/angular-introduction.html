@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <title>JavaScript &amp; jQuery - 제9장 APIs - 간단한 Angular 예제</title>
+    <link rel="stylesheet" href="css/c09.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+  </head>
+  <body>
+    <header><h1>THE MAKER BUS</h1></header>
+    <div class="third">
+      <p class="welcome">친구와 이 페이지 공유하기</p>
+      <form>
+        받는사람:<br>
+        <input ng-model="name" type="text" /><br>
+        내용:<br>
+        <textarea ng-model="message"></textarea>
+        <input type="submit" value="메시지 전송" />
+      </form>
+    </div>
+    <div class="two-thirds">
+      <div class="postcard">
+        <div>{{ name }}</div>
+        <p>{{ message }}</p>
+      </div>
+    </div>
+  </body>
+</html>

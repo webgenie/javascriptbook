@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - 제13장 폼 확장과 유효성 검사 - 선택상자 조작하기</title>
+    <link rel="stylesheet" href="css/c13.css" />
+  </head>
+  <body>
+    <div class="container login">
+      <form name="howHeard" id="howHeard" action="/heard" method="post">
+        <div class="one-third column">
+          <img src="img/logo.png" alt="logo" id="logo" />
+        </div>
+        <div class="two-thirds column" id="main">
+          <fieldset>
+            <legend>장비 대여</legend>
+              <label for="equipmentType">종류</label>
+              <select id="equipmentType" name="equipmentType">
+                <option value="choose">종류를 선택해 주세요</option>
+                <option value="cameras">카메라</option>
+                <option value="projectors">프로젝터</option>
+              </select><br>
+              <label for="model">모델</label>
+              <select id="model" name="model">
+                <option>종류를 먼저 선택해 주세요</option>
+              </select>
+              <input id="submit" type="submit" value="전송" />
+          </fieldset>
+        </div><!-- .two-thirds -->
+      </form>
+    </div><!-- .container -->
+    <script src="js/utilities.js"></script>
+    <script src="js/populate-selectbox.js"></script>
+  </body>
+</html>

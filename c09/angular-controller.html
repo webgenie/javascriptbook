@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <title>JavaScript &amp; jQuery - 제9장 APIs - Angular 뷰 모델 / 컨트롤러</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script src="js/angular-controller.js"></script>
+    <link rel="stylesheet" href="css/c09.css">
+  </head>
+  <body>
+    <header><h1>THE MAKER BUS</h1></header>
+    <h2>티켓 구매하기</h2>
+    <div class="third"><img src="img/toys1.jpg" alt="Circuit boards" /></div>
+    <div class="two-thirds">
+      <table ng-controller="BasketCtrl">
+        <tr><td>아이템:</td><td>{{ description }}</td></tr>
+        <tr><td>가격:</td><td>${{ cost }}</td></tr>
+        <tr><td>수량:</td><td><input type="number" ng-model="qty"></td></tr>
+        <tr><td>구입 가격:</td><td>{{qty * cost | currency}}</td></tr>
+      </table>
+    </div>
+  </body>
+</html>

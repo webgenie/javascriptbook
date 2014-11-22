@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - 제13장 폼 확장 및 유효성 검사 - 유효성 검사</title>
+    <link rel="stylesheet" href="css/c13.css" />
+    <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
+  </head>
+  <body>
+  <div class="container">
+    <form method="post" action="/register" name="register">
+      <div class="one-third column">
+        <img src="img/logo.png" alt="logo" id="logo" />
+        <h2 class="welcome">회원 가입</h2>
+        <p class="intro">Super 8 영화 커뮤니티에 오신 것을 환영합니다.</p>
+      </div>
+      <div class="one-third column">
+        <h2>설정</h2>
+          <div class="name">
+            <label for="name" class="required">이름:</label>
+            <input type="text" placeholder="이름을 입력하세요" name="name" id="name" required title="이름을 입력하세요">
+          </div>
+          <div class="email">
+            <label for="email" class="required">메일 주소:</label>
+            <input type="email" placeholder="you@example.com" name="email" id="email" required>
+          </div>
+          <div class="password">
+            <label for="password" class="required">비밀번호:</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div class="password">
+            <label for="conf-password" class="required">비밀번호 확인:</label>
+            <input type="password" name="conf-password" id="conf-password" required>
+          </div>
+        </fieldset>
+      </div>
+      <div class="one-third column">
+        <h2>프로필</h2>
+          <div class="birthday">
+            <label for="birthday" class="required">생일:</label>
+            <input type="date" name="birthday" id="birthday" placeholder="yyyy-mm-dd" required>
+            <div id="consent-container" class="hide">
+              <label for="parents-consent">부모님의 동의가 필요합니다.
+                자녀의 가입에 동의하시면 체크해 주세요:</label>
+              <input type="checkbox" name="parents-consent" id="parents-consent">
+            </div>
+          </div>
+          <div class="bio">
+            <label for="bio">자기 소개 (최대 140자):</label>
+            <textarea name="bio" id="bio" rows="5" cols="30"></textarea>
+            <span id="bio-count" class="hide">140</span>
+          </div>
+          <div class="register"><input type="submit" value="가입하기"></div>
+      </div>
+    </form>
+  </div><!-- .container -->
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/jquery-ui-1.10.3.custom.js"></script>
+  <script src="js/utilities.js"></script>
+  <script src="js/placeholder-polyfill.js"></script>
+  <script src="js/password-signup.js"></script>
+  <script src="js/birthday.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/bio.js"></script>
+  </body>
+</html>

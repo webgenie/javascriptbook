@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - 제8장 Ajax와 JSON - .post()</title>
+    <link rel="stylesheet" href="css/c08.css" />
+  </head>
+  <body>
+
+    <header>
+      <h1>THE MAKER BUS</h1>
+    </header>
+
+    <section id="content">
+      <div class="half">
+        <img src="img/register-circuitboard.jpg" alt="circuit board" />
+      </div>
+      <div class="half">
+        <form id="register" action="register.php" method="post">
+          <h2>등록하기</h2>
+          <label for="name">사용자 이름</label><input type="text" id="name" name="name" />
+          <label for="pwd">비밀번호</label><input type="password" id="pwd" name="pwd" />
+          <label for="email">Email</label><input type="email" id="email" name="email" />
+          <input type="submit" value="등록" />
+        </form>
+      </div>
+    </section>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jq-post.js"></script>
+
+  </body>
+</html>

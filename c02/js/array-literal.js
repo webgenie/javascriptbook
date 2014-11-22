@@ -1,0 +1,1 @@
+// 배열을 생성하고 값을 대입한다.var colors; colors = ['white', 'black', 'custom'];// 배열의 첫 번째 아이템을 출력한다.var el = document.getElementById('colors');el.textContent = colors[0];// 주의: textContent 속성은 IE8 혹은 그 이전 버전에서는 동작하지 않는다 - 웹사이트의 설명을 참고하기 바란다.

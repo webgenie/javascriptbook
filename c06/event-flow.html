@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - 제6장 이벤트 - 이벤트 버블링과 캡쳐링</title>
+    <link rel="stylesheet" href="css/c06.css" />
+    <style>
+      #page {float:left; margin-left: 30px; width: 400px;}
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <h1>List King</h1>
+      <h2>버블링</h2>
+      <ul id="list">
+        <li id="item"><a id="link">신선한 무화과</a></li>
+      </ul>
+    </div>
+    <div id="page">
+      <h1>List King</h1>
+      <h2>캡쳐링</h2>
+      <ul id="list2">
+        <li id="item2"><a id="link2">신선한 무화과</a></li>
+      </ul>
+    </div>
+    <script src="js/event-flow.js"></script>
+  </body>
+</html>

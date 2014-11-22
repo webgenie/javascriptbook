@@ -1,0 +1,1 @@
+$(function() {  var $p = $('p');  // <p> 태그의 복사본을 만들어 <h2> 요소 아래에 추가한다  var $clonedQuote = $p.clone();  $p.remove();  $clonedQuote.insertAfter('h2');  // 첫 번째 아이템을 제거한 후 목록의 아래에 다시 추가한다  var $moveItem = $('#one').detach();  $moveItem.appendTo('ul');});

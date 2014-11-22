@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - 제13장 폼 확장 및 유효성 검사 - 라디오 버튼</title>
+    <link rel="stylesheet" href="css/c13.css" />
+  </head>
+  <body>
+    <div class="container login">
+      <form id="how-heard" action="/heard" method="post">
+        <div class="one-third column">
+          <img src="img/logo.png" alt="logo" id="logo" />
+        </div>
+        <div class="two-thirds column" id="main">
+          <fieldset>
+            <legend>이 웹사이트를 어떻게 알게 되였나요?</legend>
+
+            <input type="radio" name="heard" value="search" id="search" />
+            <label for="search">검색 엔진</label><br>
+
+            <input type="radio" name="heard" value="print" id="print" />
+            <label for="print">신문 또는 잡지</label><br>
+
+            <input type="radio" name="heard" value="other" id="other" />
+            <label for="other">기타</label><br>
+            <input type="text" name="other-input" id="other-text" />
+  
+            <input id="submit" type="submit" value="전송" />
+          </fieldset>
+        </div><!-- .two-thirds -->
+      </form>
+    </div><!-- .container -->
+    <script src="js/utilities.js"></script>
+    <script src="js/show-option.js"></script>
+  </body>
+</html>

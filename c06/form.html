@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - 제6장 이벤트 - 폼 이벤트</title>
+    <link rel="stylesheet" href="css/c06.css" />
+  </head>
+  <body>
+    <div id="page">
+      <h1>List King</h1>
+      <form method="post" action="http://www.example.org/register" id="formSignup">
+        <h2>멤버십</h2>
+
+        <label for="package" class="selectbox"> 패키지를 선택하세요: </label>
+        <select id="package">
+          <option value="annual">1년 ($50)</option>
+          <option value="monthly">1개월 ($5)</option>
+        </select>
+        <div id="packageHint" class="tip"></div>
+
+        <input type="checkbox" id="terms" />
+        <label for="terms" class="checkbox"> 사용권 계약에 동의합니다</label>
+        <div id="termsHint" class="warning"></div>
+
+        <input type="submit" value="다음" />
+
+        </form>
+      </div>
+      <script src="js/form.js"></script>
+    </body>
+</html>

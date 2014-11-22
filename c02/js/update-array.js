@@ -1,0 +1,1 @@
+// 배열을 생성하고 값을 대입한다.var colors = ['white', 'black', 'custom'];// 배열의 세 번째 아이템을 수정한다.colors[2] = 'beige';// id 특성 값이 colors인 요소를 찾는다.var el = document.getElementById('colors');// 배열의 세 번째 아이템의 값을 출력한다.el.textContent = colors[2];// 주의: textContent 속성은 IE8 및 그 이전 버전에서는 동작하지 않는다 - 웹사이트의 설명을 참고하기 바란다.

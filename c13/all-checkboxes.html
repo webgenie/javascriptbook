@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - 제13장 폼 확장 및 유효성 검사 - 모든 체크 상자 체크하기</title>
+    <link rel="stylesheet" href="css/c13.css" />
+  </head>
+  <body>
+    <div class="container login">
+      <form id="interests" action="/login" method="post">
+        <div class="one-third column">
+          <img src="img/logo.png" alt="logo" id="logo" />
+        </div>
+        <div class="two-thirds column" id="main">
+          <fieldset>
+            <legend>장르</legend>
+            <label><input type="checkbox" value="all" id="all">모두 선택</label>
+            <label><input type="checkbox" name="genre" value="animation">애니메이션</label>
+            <label><input type="checkbox" name="genre" value="docs">다큐멘터리</label>
+            <label><input type="checkbox" name="genre" value="shorts">단편 영화</label>
+          </fieldset>
+        </div><!-- .two-thirds -->
+      </form>
+    </div><!-- .container -->
+    <script src="js/utilities.js"></script>
+    <script src="js/all-checkboxes.js"></script>
+  </body>
+</html>

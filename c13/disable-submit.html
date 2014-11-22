@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - 제13장 폼 확장과 유효성 검사 - 전송버튼 비활성화 하기</title>
+    <link rel="stylesheet" href="css/c13.css" />
+  </head>
+  <body>
+    <div class="container login">
+      <form id="newPwd" action="/login" method="post">
+        <div class="one-third column">
+          <img src="img/logo.png" alt="logo" id="logo" />
+        </div>
+        <div class="two-thirds column" id="main">
+          <fieldset>
+            <legend>비밀번호 재설정</legend>
+            <label for="pwd">새 비밀번호:</label>
+            <input type="password" id="pwd" />
+            <input type="submit" id="submit" value="전송" />
+          </fieldset>
+        </div><!-- .two-thirds -->
+      </form>
+    </div><!-- .container -->
+    <script src="js/utilities.js"></script>
+    <script src="js/disable-submit.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <title>JavaScript &amp; jQuery - 제9장 APIs - Angular 원격 데이터 처리하기</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script src="js/angular-external-data.js"></script>
+    <link rel="stylesheet" href="css/c09.css">
+  </head>
+  <body>
+    <header><h1>THE MAKER BUS</h1></header>
+    <h2>세션 시간표</h2>
+    <div class="third"><img src="img/toys1.jpg" alt="Circuit boards" /></div>
+    <div class="two-thirds" id="timetable">
+      <table ng-controller="TimetableCtrl">
+        <tr><th>시간</th><th>제목</th><th>상세내용</th></tr>
+        <tr ng-repeat="session in sessions">
+          <td>{{ session.time }}</td>
+          <td>{{ session.title }}</td>
+          <td>{{ session.detail }}</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

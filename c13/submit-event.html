@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - 제13장 폼 확장 및 유효성 검사 - submit 이벤트</title>
+    <link rel="stylesheet" href="css/c13.css" />
+  </head>
+  <body>
+    <div class="container login">
+      <form id="login" action="/login/" method="post">
+        <div class="one-third column">
+          <img src="img/logo.png" alt="logo" id="logo" />
+        </div>
+        <div class="two-thirds column" id="main">
+          <fieldset>
+            <legend>로그인</legend>
+            <label for="username">사용자 이름:</label>
+            <input type="text" id="username" name="username" />
+            <label for="pwd">비밀번호:</label>
+            <input type="password" id="pwd" name="pwd" />
+            <input type="submit" value="로그인" />
+          </fieldset>
+        </div><!-- .two-thirds -->
+      </form>
+    </div><!-- .container -->
+    <script src="js/utilities.js"></script>
+    <script src="js/submit-event.js"></script>
+  </body>
+</html>
