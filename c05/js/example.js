@@ -28,4 +28,4 @@ var heading = document.querySelector('h2');                        // h2 요소�
 var headingText = heading.firstChild.nodeValue;                    // h2 요소의 텍스트를 가져온다
 var totalItems = listItems.length;                                 // <li> 요소의 갯수를 저장한다.
 var newHeading =  headingText + '<span>' + totalItems + '</span>'; // 제목 내용을 수정한다.
-heading.innerHTML = newHeading;                                    // h2 요소를 수정한다.
+heading.innerHTML = newHeading;                                    // 새로운 내용이 마크업을 가지고 있으므로 (textContent) 속성 대신 innerHTML 속성을 이용하여 h2 요소의 콘텐츠를 수정한다
