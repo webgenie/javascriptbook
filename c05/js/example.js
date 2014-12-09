@@ -25,6 +25,7 @@ for (i = 0; i < listItems.length; i++) {                           // 루프를 
 
 // 제목에 아이템의 갯수를 추가한다.
 var heading = document.querySelector('h2');                        // h2 요소를 찾는다.
+var headingText = heading.firstChild.nodeValue;                    // h2 요소의 텍스트를 가져온다
 var totalItems = listItems.length;                                 // <li> 요소의 갯수를 저장한다.
 var newHeading =  headingText + '<span>' + totalItems + '</span>'; // 제목 내용을 수정한다.
 heading.innerHTML = newHeading;                                    // h2 요소를 수정한다.
