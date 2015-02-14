@@ -27,7 +27,7 @@ function recorderControls(e) {                   // recorderControls() 함수를
     case 'record':                                 // 값이 record 이면
       record(target);                              // record() 함수를 호출한다
       break;                                       // 함수 실행을 중단한다
-    case 'stop':                                   // 값이 stop이면 
+    case 'stop':                                   // 값이 stop이면
       stop(target);                                // stop() 함수를 호출한다
       break;                                       // 함수 실행을 중단한다
       // 다른 버튼에 대한 처리를 추가할 수 있다.
@@ -41,7 +41,7 @@ function record(target) {                        // 함수를 선언한다
 
 function stop(target) {
   target.setAttribute('data-state', 'record'); //data-state 특성 값을 record로 변경한다
-  target.textContent = 'record';               // 텍스트를 'record'로 변경한다
+  target.textContent = '녹화';               // 텍스트를 '녹화'로 변경한다
 }
 
 
@@ -50,7 +50,7 @@ if (document.addEventListener) {                 // 이벤트 리스너가 지�
     recorderControls(e);                         // recorderControls() 함수를 호출한다
   }, false);                                     // 이벤트를 캡쳐한다
   // username 요소에서 input 이벤트가 발생하면 writeLabel() 함수를 호출한다
-  username.addEventListener('input', writeLabel, false); 
+  username.addEventListener('input', writeLabel, false);
 } else {                                         // 그렇지 않으면
   document.attachEvent('onclick', function(e) {  // IE 대체 코드를 실행한다
     recorderControls(e);                         // recorderControls() 함수를 호출한다
